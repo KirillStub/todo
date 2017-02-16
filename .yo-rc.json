@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "todo",
+    "style": "scss",
+    "postcss": true
+  }
+}
