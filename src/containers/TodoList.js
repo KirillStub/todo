@@ -12,7 +12,8 @@ const TodoList = ({ todos, dispatch }) => (
           <Todo completed={todo.completed}
                 text={todo.text}
                 clickOnComplete={() => dispatch(completeTodo(id))}
-                clickOnDelete={() => dispatch(deleteTodo(id))}/>
+                clickOnDelete={() => dispatch(deleteTodo(id))}
+                id={id}/>
         </div>
     )}
   </div>

@@ -1,11 +1,14 @@
 import React from 'react'
-import TodoList from '../containers/TodoList'
-import Form from '../containers/Form'
 
-const App = () => (
-  <div>
-    <TodoList />
-    <Form />
+require('styles//App.scss');
+
+const App = (props) => (
+  <div className='app'>
+    <div className='app__header'>This is header</div>
+    <div className='app__body'>
+      {props.children}
+    </div>
+    <div className='app__footer'>This is footer</div>
   </div>
 );
 
